@@ -5,13 +5,14 @@
     <div class="col-md-6">
       <ul class="quotes">
         <li *ngFor="let quote of quotes">
+          <!-- <li appStrikethrough>{{quote.text}}</li> -->
           <div class="card">
               <div class="card-content">          
-                <span class="card-title grey-text text-darken-4">"<i>{{quote.text}}</i>"</span>
+                <span class="card-title grey-text text-darken-4">"<i><li appStrikethrough>{{quote.text}}</li></i>"</span>
                 <b>~{{quote.author}}</b>  
               </div>        
             </div>
-        </li>
+          </li>
       </ul>     
     </div>
     <form class="col-md-6">
