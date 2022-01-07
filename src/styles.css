@@ -21,8 +21,3 @@
   --main5-color: #E76F51;
   --text-color: #000;
 }
-
-body{
-  color: var(--text-color);
-  background-color: var(--bg-color);
-}
