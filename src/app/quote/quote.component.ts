@@ -10,12 +10,12 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    {id:1,text:'Age is no barrier. It is a limitation you put on your mind' , author: 'Jackie Joyner-Kersee'},
-    {id:3,text:'To give anything less than your best, is to sacrifice the gift.',author:'Steve Prefontaine'},
-    {id:4,text:'People can say what they want about me. But I have got a big heart and will keep going.',author:'Tyson Furry'},
-    {id:5,text:'Only the disciplined ones in life are free. If you are undisciplined, you are a slave to your moods and your passions.',author:'Eliud Kipchoge'},
-    {id:6,text:'Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.',author:'Pele'},
-    {id:7,text:'The road to our dreams has many detours.',author:'Kurt Warner'}
+    new Quote(1, 'Age is no barrier. It is a limitation you put on your mind', 'Jackie Joyner-Kersee', new Date(2021,10,12)),
+    new Quote(2, 'To give anything less than your best, is to sacrifice the gift.', 'Steve Prefontaine', new Date(2020,11,4)),
+    new Quote(3, 'People can say what they want about me. But I have got a big heart and will keep going.', 'Tyson Furry', new Date(2021,8,3)),
+    new Quote(4, 'Only the disciplined ones in life are free. If you are undisciplined, you are a slave to your moods and your passions.', 'Eliud Kipchoge', new Date(2021,12,25)),
+    new Quote(5, 'Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.','Pele', new Date(2022,1,1)),
+    new Quote(6, 'The road to our dreams has many detours.', 'Kurt Warner', new Date(2021,7,10))
     ];
 
   constructor() { }
