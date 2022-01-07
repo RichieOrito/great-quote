@@ -1,2 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Acme', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --bg-color: #fff;
+  --main-color:#264653;
+  --main2-color: #2A9D8F;
+  --main3-color:#E9C46A;
+  --main4-color: #F4A261;
+  --main5-color: #E76F51;
+  --text-color: #000;
+}
+
+body{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
