@@ -19,15 +19,17 @@
                 <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'>
                 </app-quote-detail>
               </div>
+              <div>
 
                 <span class="mr-3">
                   <i (click)="quoteUpvote()" class="material-icons">arrow_drop_up</i> 
-                {{ upvote }}</span
-                >
+                {{ upvote }}
+              </span>
                 <span class="mr-3">
                   <i (click)="quoteDownvote()" class="material-icons">arrow_drop_down</i>
-                {{ downvote }}</span
-                >
+                {{ downvote }}
+              </span>
+              </div>
               </div>      
           </div>
         </li>

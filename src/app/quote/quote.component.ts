@@ -36,10 +36,10 @@ export class QuoteComponent implements OnInit {
     upvote = 0;
     downvote = 0;
   
-    quoteUpvote(): void {
+    quoteUpvote() {
       this.upvote++;
     }
-    quoteDownvote(): void {
+    quoteDownvote() {
       this.downvote++;
     }
 
