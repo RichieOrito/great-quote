@@ -9,6 +9,20 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
 
+  toggleDetails(index: any){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+
+  deleteQuote(isComplete: any, index: any){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].text}?`)
+
+      if (toDelete){
+        this.quotes.splice(index,1)
+      }
+    }
+  }
+
   quotes:Quote[] = [
     new Quote(1, 'Age is no barrier. It is a limitation you put on your mind', 'Jackie Joyner-Kersee','Riisherd','#Motivation', new Date(2021,10,12)),
     new Quote(2, 'To give anything less than your best, is to sacrifice the gift.', 'Steve Prefontaine','Shikkie', '#keep Pushing',new Date(2020,11,4)),
