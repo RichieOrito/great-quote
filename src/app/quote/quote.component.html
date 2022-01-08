@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>My Quotes</h1>
+  <h1>Great <span>Q</span>uotes<span>.</span></h1>
   <hr>
   <div class="row">
     <div class="col-md-6">
@@ -7,11 +7,11 @@
         <li *ngFor="let quote of quotes;let i = index">
           <div class="card">
               <div class="card-content">          
-                <span class="card-title grey-text text-darken-4">"<i><li appStrikethrough>{{quote.text}}</li></i>"</span>
+                <span class="card-title grey-text text-darken-4"><span>"</span><i><li appStrikethrough>{{quote.text}}</li></i><span>"</span></span>
                 <b>~{{quote.author}}</b>
                 <hr>
-                <p>Submited by:{{quote.name}}</p>
-                <p>On:{{quote.completeDate|date|uppercase}}</p>
+                <p>Submited by:<b>{{quote.name}}</b></p>
+                <p>On:<b>{{quote.completeDate|date|uppercase}}</b></p>
                 <button (click)='toggleDetails(i)' class="btn btn-primary">More</button>
 
                 

@@ -1,0 +1,15 @@
+.card{
+  background-color: var(--main3-color);
+}
+
+.btn{
+  background-color: var(--bg-color);
+}
+
+label{
+  color: var(--bg-color);
+}
+
+span{
+  text-align: center;
+}

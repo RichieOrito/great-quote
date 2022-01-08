@@ -3,16 +3,17 @@
       <div class="card">
         <div class="card-content">
           <span class="card-title grey-text text-darken-4">Add New Quote</span>
+          <hr>
           <div class="form-group">
             <div class="input-field col s12">
-              <textarea id="textarea1" class="materialize-textarea" id="name" [(ngModel)]="newQuote.text" name="text" #quote='ngModel' required>
-                <div [hidden]="text.valid || text.pristine" class="alert alert-danger"></div>
+              <input type="text"  class="materialize-textarea form-control" id="text" [(ngModel)]="newQuote.text" name="text" #text='ngModel' required>
+                <div [hidden]="text.valid || text.pristine" class="alert alert-danger">
                   <p>Quote is required</p>
                 </div>
-              </textarea>
-              <!-- <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.text" name="name" #quote='ngModel' required>
-              <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
-                <p>Name is required</p>
+              <!-- </textarea> -->
+              <!-- <input type="text" class="form-control" id="text" [(ngModel)]="newQuote.text" name="text" #text='ngModel' required>
+              <div [hidden]="text.valid || text.pristine" class="alert alert-danger">
+                <p>Quote is required</p>
               </div> -->
               <label for="text">Qoute:</label>
               {{newQuote.text}}
@@ -23,11 +24,10 @@
             <!-- <i class="bi bi-person-circle"></i> -->
             <i class="material-icons prefix">account_circle</i>
             <!-- <input #quoteBy name="quoteby" type="text" class="validate"> -->
-            <textarea id="textarea1" class="materialize-textarea" [(ngModel)]="newQuote.author" name="author" #quote='ngModel' required>
-              <div [hidden]="author.valid || author.pristine" class="alert alert-danger" required >
-                <p>Quote is required</p>
+            <input type="text" class="materialize-textarea form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author='ngModel' required>
+              <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+                <p>Quoted by who?</p>
               </div>
-            </textarea>
             <label for="author">By:</label>
             {{newQuote.author}}
           </div>
@@ -39,18 +39,17 @@
           <!-- <i class="bi bi-person-circle"></i> -->
             <i class="material-icons prefix">account_circle</i>
             <!-- <input #quoteBy name="quoteby" type="text" class="validate"> -->
-            <textarea id="textarea1" class="materialize-textarea" [(ngModel)]="newQuote.name" name="name" #quote='ngModel' required>
-              <div [hidden]="author.valid || author.pristine" class="alert alert-danger" required >
+            <input type="text" class="materialize-textarea form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
+              <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
                 <p>Your Name is required</p>
               </div>
-            </textarea>
             <label for="name">Your Name:</label>
             {{newQuote.name}}
           </div>
         </div>
         
           <div class="input-field col s3 offset-s9">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <button class="btn waves-effect waves-light" type="submit" name="action">Post
               <i class="material-icons right">send</i>
             </button>      
           </div>

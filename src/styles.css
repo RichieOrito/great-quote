@@ -20,3 +20,7 @@
   --main5-color: #E76F51;
   --text-color: #000;
 }
+
+body{
+  background-color: var(--main5-color);
+}
