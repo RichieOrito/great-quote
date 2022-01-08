@@ -4,7 +4,7 @@
   <div class="row">
     <div class="col-md-6">
       <ul class="quotes">
-        <li *ngFor="let quote of quotes">
+        <li *ngFor="let quote of quotes;let i = index">
           <div class="card">
               <div class="card-content">          
                 <span class="card-title grey-text text-darken-4">"<i><li appStrikethrough>{{quote.text}}</li></i>"</span>
@@ -12,19 +12,28 @@
                 <hr>
                 <p>Submited by:{{quote.name}}</p>
                 <p>On:{{quote.completeDate|date|uppercase}}</p>
-                <span class="mr-3"
-                ><i (click)="quoteUpvote()" class="material-icons">arrow_drop_up</i> 
+                <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+
+                
+              <div *ngIf='quote.showDescription'>
+                <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'>
+                </app-quote-detail>
+              </div>
+
+                <span class="mr-3">
+                  <i (click)="quoteUpvote()" class="material-icons">arrow_drop_up</i> 
                 {{ upvote }}</span
-              >
-              <span class="mr-3"
-                ><i (click)="quoteDownvote()" class="material-icons">arrow_drop_down</i>
+                >
+                <span class="mr-3">
+                  <i (click)="quoteDownvote()" class="material-icons">arrow_drop_down</i>
                 {{ downvote }}</span
-              >
+                >
               </div>      
-            </div>
-          </li>
+          </div>
+        </li>
       </ul>     
     </div>
+
     <div class="col-md-6">
       <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div> 
