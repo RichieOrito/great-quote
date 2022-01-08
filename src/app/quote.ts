@@ -3,7 +3,8 @@ export class Quote {
   // text!: string;
   // author!: string;
    // name!: string;
+   // description!: string;
   // completeDate!: Date;
-  constructor(public id: number,public text: string,public author: string,public name: string,public completeDate: Date){
+  constructor(public id: number,public text: string,public author: string,public name: string,public description: string,public completeDate: Date){
   }
 }

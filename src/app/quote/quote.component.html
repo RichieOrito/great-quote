@@ -12,7 +12,15 @@
                 <hr>
                 <p>Submited by:{{quote.name}}</p>
                 <p>On:{{quote.completeDate|date|uppercase}}</p>
-              </div>        
+                <span class="mr-3"
+                ><i (click)="quoteUpvote()" class="material-icons">arrow_drop_up</i> 
+                {{ upvote }}</span
+              >
+              <span class="mr-3"
+                ><i (click)="quoteDownvote()" class="material-icons">arrow_drop_down</i>
+                {{ downvote }}</span
+              >
+              </div>      
             </div>
           </li>
       </ul>     
