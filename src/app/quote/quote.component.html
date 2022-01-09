@@ -15,21 +15,21 @@
                 <button (click)='toggleDetails(i)' class="btn btn-primary">More</button>
 
                 
-              <div *ngIf='quote.showDescription'>
-                <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'>
-                </app-quote-detail>
-              </div>
-              <div>
-
-                <span class="mr-3">
-                  <i (click)="quoteUpvote()" class="material-icons">arrow_drop_up</i> 
-                {{ upvote }}
-              </span>
-                <span class="mr-3">
-                  <i (click)="quoteDownvote()" class="material-icons">arrow_drop_down</i>
-                {{ downvote }}
-              </span>
-              </div>
+                <div *ngIf='quote.showDescription'>
+                  <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'>
+                  </app-quote-detail>
+                </div>
+                
+                <div class="vote">
+                  <span class="mr-3">
+                    <i (click)="quoteUpvote(i)" class="material-icons">arrow_drop_up</i> 
+                      {{ quote.upvote }}
+                  </span>
+                  <span class="mr-3">
+                    <i (click)="quoteDownvote(i)" class="material-icons">arrow_drop_down</i>
+                    {{ quote.downvote }}
+                  </span>
+                </div>
               </div>      
           </div>
         </li>

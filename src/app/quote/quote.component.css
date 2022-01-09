@@ -18,3 +18,7 @@ span{
   background-color: var(--main5-color);
   border-style: none;
 }
+
+.material-icons{
+  cursor: pointer;
+}

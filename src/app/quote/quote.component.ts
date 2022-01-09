@@ -24,23 +24,23 @@ export class QuoteComponent implements OnInit {
   }
 
   quotes:Quote[] = [
-    new Quote(1, 'Age is no barrier. It is a limitation you put on your mind', 'Jackie Joyner-Kersee','Riisherd','', new Date(2021,10,12)),
-    new Quote(2, 'To give anything less than your best, is to sacrifice the gift.', 'Steve Prefontaine','Shikkie', '',new Date(2020,11,4)),
-    new Quote(3, 'People can say what they want about me. But I have got a big heart and will keep going', 'Tyson Furry', 'Alvondo', '',new Date(2021,8,3)),
-    new Quote(4, 'Only the disciplined ones in life are free. If you are undisciplined, you are a slave to your moods and your passions.', 'Eliud Kipchoge','Dan', '', new Date(2021,12,25)),
-    new Quote(5, 'Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.','Pele','Rue','', new Date(2022,1,1)),
-    new Quote(6, 'The road to our dreams has many detours.', 'Kurt Warner','ozil','', new Date(2021,7,10))
+    new Quote(1, 'Age is no barrier. It is a limitation you put on your mind', 'Jackie Joyner-Kersee','Riisherd','', new Date(2021,10,12),0,0),
+    new Quote(2, 'To give anything less than your best, is to sacrifice the gift.', 'Steve Prefontaine','Shikkie', '',new Date(2020,11,4),0,0),
+    new Quote(3, 'People can say what they want about me. But I have got a big heart and will keep going', 'Tyson Furry', 'Alvondo', '',new Date(2021,8,3),0,0),
+    new Quote(4, 'Only the disciplined ones in life are free. If you are undisciplined, you are a slave to your moods and your passions.', 'Eliud Kipchoge','Dan', '', new Date(2021,12,25),0,0),
+    new Quote(5, 'Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.','Pele','Rue','', new Date(2022,1,1),0,0),
+    new Quote(6, 'The road to our dreams has many detours.', 'Kurt Warner','ozil','', new Date(2021,7,10),0,0)
     ];
 
     @Input() quote: any;
     upvote = 0;
     downvote = 0;
   
-    quoteUpvote() {
-      this.upvote++;
+    quoteUpvote(index: any) {
+      this.quotes[index].upvote++;
     }
-    quoteDownvote() {
-      this.downvote++;
+    quoteDownvote(index: any) {
+      this.quotes[index].downvote++;
     }
 
     addNewQuote(quote: any){

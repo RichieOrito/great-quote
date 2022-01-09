@@ -6,7 +6,7 @@ export class Quote {
    // description!: string;
   // completeDate!: Date;
   showDescription: boolean;
-  constructor(public id: number,public text: string,public author: string,public name: string,public description: string,public completeDate: Date){
+  constructor(public id: number,public text: string,public author: string,public name: string,public description: string,public completeDate: Date,public upvote: number,public downvote: number){
     this.showDescription=false;
   }
 }
