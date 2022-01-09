@@ -21,7 +21,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 + [Further help](#further-help)
 
 ## Description
-<p>This is Quote Web Application.Where users can see various quotes , delete and post thier own quotes, Upvote or downvote a quote and to see the number of upvotes and number of downvotes for each quote.</p>
+<p>This is Quote Web Application.Where users can see various quotes , delete and post thier own quotes, Upvote or downvote a quote and to see the number of upvotes and number of downvotes for each quote. A user can also strike through a quote to highlight it as read.</p>
 
 ## Installation
 
