@@ -119,7 +119,7 @@ SOFTWARE.
 
 Slack Profile - [Richard Omondi](https://app.slack.com/client/T0101L740P4/C010GLANY3A/user_profile/U02EZFHEJUA)
 
-Linked - [Richard Orito](https://www.linkedin.com/in/richie-orito/)
+LinkedIn - [Richard Orito](https://www.linkedin.com/in/richie-orito/)
 
 Gmail - [richard.omondi@student.moringaschool.com]()
 
@@ -127,7 +127,7 @@ Github - [RICHIE ORITO](https://github.com/RichieOrito)
 
 ## Live Link
 
-LiveLink- [Gh-pages]()
+LiveLink- [Gh-pages](https://richieorito.github.io/great-quote/)
 
 [Go Back to the top](#great-quotes)
 
