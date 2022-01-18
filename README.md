@@ -25,7 +25,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Installation
 
-* Open Terminal [ctrl+Alt+T]
+* Open Terminal `ctrl+Alt+T`
 * Git clone-https://github.com/RichieOrito/great-quote
 * Git fork-Enter your own repository and sesarch-https://github.com/RichieOrito/great-quote.git then click on fork to add
 it on your own repository.
